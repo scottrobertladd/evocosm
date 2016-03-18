@@ -1,0 +1,84 @@
+18 March 2016 -- Evocosm 5.0.0
+
+  * CHANGE: Removed non-BSD license
+  
+  * CHANGE: Reorganized code for cleaner distro.
+  
+  * CHANGE: Began modernized of on pre-C++11/14 C++ code; still more to do.
+  
+  * CHANGE: Improved example code, simplified naming
+  
+  * CHANGE: Cleaned code to compile under -Wall with gcc.
+  
+  * CHANGE: Eliminated dependancies on my other libraries.
+
+1 July 2011
+    Evocosm 4.0.0
+
+  * CHANGE: Switched to Simplified BSD (FreeBSD) license for Open Source users.
+
+  * CHANGE: Major code cleanup amd simplification. Nearly every class has changed
+            in some way, and the library is no longer compatible with previous
+            versions. Nearly every single class has been change din some manner
+            to streamline and clarify the code.
+
+  * CHANGE: Some classes renamed; for example, simple_fsm is now simple_machine,
+            and fsm_tools are now machine_tools.
+
+  * CHANGE: There is now one population and one set of fitness landscapes per
+            evocosm. This vastly simplifies the library, and multiple intercating
+            populations can still be simultaed internal to user code.
+
+  * CHANGE: New stats class to perform simple statsitical analysis on populations.
+
+  * CHANGE: Fitness scalers now use the stats class when appropriate.
+
+  * NEW:    New example programs, including:
+
+            * Extended function optimizer engine
+            * Prisoner's Dilemma using state machines
+
+20 November 2009
+    Evocosm 3.4.0
+
+  * CHANGE: Updated to GPL 3
+
+  * CHANGE: Reporter class template renamed analyzr to clarify its purpose,
+            which is to analyze a generation to see what state the population
+            is in.
+
+  * CHANGE: Listener class purpose clarfified: It is responsible for responding
+            to events, which usually means updating a user interface. Added a
+            "verbosty" setting as well.
+
+  * CHANGE: The function optimizer is now part of the library itself
+
+  * ADDED:  New example/test program for the function optimizer
+
+  * FIX:    Minor clean-up in OpenMP support
+
+21 January 2009
+    Evocosm 3.3.1
+
+  * FIX:    Removed bit-rot from Autotools files
+
+17 July 2008
+    Evocosm 3.3.0
+
+  * NEW:    OpenMP support for fitness testing loop; it had been
+            in the code previously, but not officially supported
+            until now.
+
+12 September 2006
+    Evocosm 3.2.0
+
+  * CHANGE: Updated to reflect the new Brahe library's random
+            number generators. This includes encapsulating the
+            PRNG in a class.
+
+  * CHANGE: Moved the validator code from Coyotl (now defunct)
+            into Evocosm.
+
+    CHANGE: Comment and code clean-up
+
+Old ChangeLog information lost prior to this version.

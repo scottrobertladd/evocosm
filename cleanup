@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+#-- remove old configuration files
+#
+rm -f compile evocosm.pc
+rm -f *.zip *.bz2 *.gz
+rm -rf evocosm/.deps evocosm/.libs
+rm -f depcomp missing install-sh mkinstalldirs libtool acconfig.h
+rm -f configure Makefile.in config.status config.log config.guess config.cache 
+rm -f aclocal.m4 ltmain.sh config.sub
+rm -rf m4 autom4te.cache Makefile Makefile.in *.lo *~ deleteme.*
+rm -f evocosm/*.o test/*.o evocosm/*.lo
+rm -f evocosm/Makefile.in evocosm/Makefile
+rm -f examples/fopt/Makefile.in examples/fopt/Makefile examples/fopt/fopt.o examples/fopt/fopt
+rm -f examples/pdsm/Makefile.in examples/pdsm/Makefile examples/pdsm/pdsm.o examples/pdsm/pdsm
+#
+# add rm for crap in test file and library path
+#
+#-- end
